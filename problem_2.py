@@ -20,5 +20,7 @@ for word in file_contents.split(' '):
         print total_count
    
 print total_count
+f.close();
+
 
 

@@ -1,25 +1,28 @@
 import os
-from collections import Counter
 
-path = r'F:/UWTacoma/GIS_501_AU_2014/lab_3/'
-dirs = os.listdir( path )
+#Setting Variables
+systems="systems"
+science="science"
+systems_count, science_count, total_count=[0,0,0]
 
-
+#Define Dictionary
 wordcount={}
 
-systems_count, science_count, total_count =[0,0,0]
-
+#Opening File
 for filename in os.listdir('.'):
     with open('GIS_is_the_best.txt') as f:
         file_contents = f.read().lower()
 
+#Counting words
 for word in file_contents.split(' '):
-    if word in wordcount:
-        count = wordcount[word]
+    if word in systems:
+        systems_count += 1
+    elif word in science:
+        science_count += 1
     total_count += 1
-   
-print total_count
-f.close();
 
+print "Total Words = ", total_count
+print "Systems = ", systems_count
+print "science = ", science_count
 
 

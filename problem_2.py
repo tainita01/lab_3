@@ -16,8 +16,7 @@ for filename in os.listdir('.'):
 for word in file_contents.split(' '):
     if word in wordcount:
         count = wordcount[word]
-        total_count += 1
-        print total_count
+    total_count += 1
    
 print total_count
 f.close();

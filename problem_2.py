@@ -23,6 +23,6 @@ for word in file_contents.split(' '):
 
 print "Total Words = ", total_count
 print "Systems = ", systems_count
-print "science = ", science_count
+print "Science = ", science_count
 
 

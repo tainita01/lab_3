@@ -17,7 +17,7 @@ for filename in os.listdir('.'):
 for word in file_contents.split(' '):
     if word in systems:
         systems_count += 1
-    elif word in science:
+    if word in science:
         science_count += 1
     total_count += 1
 
